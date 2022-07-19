@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Lato&family=Oswald&family=Poppins&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ff53708e19.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Courgette', cursive;
+            font-family: 'Lato', sans-serif;
+            font-family: 'Oswald', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .flexible-box {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(26, 26, 26);
+            margin: 50px 200px;
+            border-radius: 40px;
+        }
+
+        #color-white {
+            color: white;
+            padding-top: 50px;
+        }
+
+        #half-width img {
+            width: 700px;
+            position: relative;
+            top: 5px;
+            left: 50px;
+        }
+
+        .sizing {
+            font-size: 70px;
+            font-weight: 900;
+        }
+
+        .button {
+            font-size: 20px;
+            color: white;
+            background-color: brown;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 15px 40px;
+        }
+
+        .fa-arrow-right {
+            margin-left: 10px;
+        }
+
+        .mar {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="flexible-box">
+        <div id="color-white" class="flex">
+            <h1 class="sizing">The Gratest <br> show on the <br> earth</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply <br>
+
+                random text. It has roots in a piece of classical Latin literature <br>
+                from 45 BC, making it over 2000 years old.</p>
+            <p class="mar"><a target="_blank" class="button" href="">Watch Live<i
+                        class="fa-solid fa-arrow-right"></i></a></p>
+        </div>
+        <div id="half-width" class="flex">
+            <img src="images/Banner Image.png" alt="">
+        </div>
+    </section>
+</body>
+
+</html>
