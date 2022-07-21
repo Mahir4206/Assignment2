@@ -7,27 +7,35 @@ body {
 
 .flexible-box {
     display: flex;
-    justify-content: center;
+    height: 200%;
+    width: 80%;
     background-color: rgb(26, 26, 26);
-    margin: 50px 150px 150px 150px;
+    margin: 5% 30% 10% 10%;
     border-radius: 40px;
 }
 
 #color-white {
+    width: 50%;
+    padding-left: 10%;
+    padding-bottom: 11%;
     color: white;
-    padding-top: 50px;
-    padding-right: 50px;
+    padding-top: 5%;
+    padding-right: 5%;
+}
+
+#half-width {
+    width: 50%;
 }
 
 #half-width img {
-    width: 700px;
+    width: 100%;
     position: relative;
-    top: 5px;
-    left: 50px;
+    right: 10%;
+    top: 2%;
 }
 
 .sizing {
-    font-size: 70px;
+    font-size: 400%;
     font-weight: 900;
 }
 
@@ -37,15 +45,15 @@ body {
     background-color: brown;
     text-decoration: none;
     border-radius: 5px;
-    padding: 15px 40px;
+    padding: 4% 6%;
 }
 
 .fa-arrow-right {
-    margin-left: 10px;
+    margin-left: 2%;
 }
 
 .padd {
-    padding-bottom: 40px;
+    padding-bottom: 20%;
 }
 
 .power-container {
@@ -56,8 +64,10 @@ body {
 .flexible-container {
     background-color: black;
     height: 330px;
-    margin-right: 20px;
-    border-radius: 10px;
+    width: 350px;
+    margin-right: 1%;
+    padding-top: 5px;
+    border-radius: 15px;
     flex-direction: column;
 }
 
@@ -65,22 +75,21 @@ body {
     text-align: center;
     font-size: 20px;
     background-color: white;
-    margin: 30px;
-    padding: 20px 70px;
+    margin: 8%;
+    padding: 6% 15%;
     border-radius: 10px;
 }
 
 #speacial {
     color: white;
-    background-color: red;
+    background-color: brown;
 }
 
 .second-flexible-container {
-    align-content: center;
     display: flex;
     display: grid;
     grid-template-columns: repeat(3, 380px);
-    grid-gap: 20px;
+    gap: 2%;
 }
 
 .padd-2 {
@@ -90,17 +99,17 @@ body {
 .division {
     border: 1px solid rgb(214, 214, 214);
     border-radius: 15px;
-    width: 380px;
-    padding: 30px 0px;
+    width: 100%;
+    padding: 10% 0;
 }
 
 .soccer {
     display: flex;
-    padding-left: 70px;
+    padding-left: 18%;
 }
 
 .soccer h1 {
-    padding: 0 10px;
+    padding: 0 5%;
 }
 
 .division h1 {
@@ -117,7 +126,7 @@ footer {
     margin-top: 150px;
 }
 
-footer div {
+.contact {
     display: flex;
     justify-content: center;
 }
@@ -148,4 +157,67 @@ footer h1 {
     color: white;
     font-size: 20px;
     padding: 0 20px 50px 20px;
+}
+
+/* smaller device */
+
+@media screen and (max-width:576px) {
+    .flexible-box {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    #half-width {
+        width: 80%;
+    }
+
+    #half-width img {
+        width: 100%;
+        padding-left: 80px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: 110%;
+    }
+
+    .second-flexible-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 5%;
+        margin-right: 5%;
+    }
+
+    .power-container {
+        flex-direction: column;
+    }
+
+    .flexible-container {
+        background: none;
+        margin-bottom: 20%;
+        margin-left: 10%;
+    }
+
+    .div {
+        border: 2px solid gray;
+    }
+
+    .sizing {
+        text-align: center;
+        font-size: 30px;
+        padding-left: 90px;
+    }
+
+    .padd {
+        text-align: center;
+        position: relative;
+        left: 55px;
+    }
+
+    .button {
+        position: relative;
+        left: 70px;
+    }
 }
